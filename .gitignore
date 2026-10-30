@@ -1,0 +1,9 @@
+guides/
+node_modules/
+jobs/
+materials/
+
+# Personal recordings, feedback and test screenshots
+page-check.png
+__pycache__/
+*.pyc

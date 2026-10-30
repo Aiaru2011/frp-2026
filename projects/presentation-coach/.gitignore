@@ -1,0 +1,13 @@
+# Local secrets and tool output
+.env
+.env.*
+!.env.example
+supabase/.temp/
+__pycache__/
+*.pyc
+node_modules/
+
+# Personal recordings and feedback stay on this computer
+storage/
+feedback/
+page-check.png
