@@ -1745,6 +1745,7 @@
   </div>
 </div>
 
+<script src="browser-storage.js"></script>
 <script type="module">
 
 const $ = (id) => document.getElementById(id);
@@ -4086,6 +4087,7 @@ async function apiJson(url, options) {
 
 async function videoUrlFor(rec) {
   const id = rec && (rec.folder || rec.id);
+  if (window.PCLocalVideoUrl) return window.PCLocalVideoUrl(id);
   return STORE_API + "/video?folder=" + encodeURIComponent(id);
 }
 
